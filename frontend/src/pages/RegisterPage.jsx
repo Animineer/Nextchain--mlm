@@ -47,7 +47,9 @@ const RegisterPage = () => {
 
       alert("Registration successful");
 
-      navigate("login");
+      navigate("/login", {
+        replace: true,
+      });
     } catch (error) {
       console.log(error);
 
