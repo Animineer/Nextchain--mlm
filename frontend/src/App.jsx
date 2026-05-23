@@ -6,13 +6,15 @@ import DashboardPage from "./pages/DashboardPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import CreateInvestmentPage from "./pages/CreateInvestmentPage";
 import './index.css'
+import NextChainHomepage from "./pages/NextChainHomepage";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
 
-        <Route path="/" element={<RegisterPage />} />
+        <Route path="/" element={<NextChainHomepage />} />
 
         <Route
           path="/dashboard"
