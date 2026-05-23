@@ -60,7 +60,9 @@ const LoginPage = () => {
 
       setUser(data);
 
-      navigate("/dashboard");
+      navigate("/dashboard", {
+        replace: true,
+      });
     } catch (error) {
       console.log(error);
 
